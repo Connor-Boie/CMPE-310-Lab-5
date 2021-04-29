@@ -14,25 +14,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Logic_Programmable:PAL16L8 U?
-U 1 1 60797DE5
-P 1900 3500
-F 0 "U?" H 1900 4381 50  0000 C CNN
-F 1 "PAL16L8" H 1900 4290 50  0000 C CNN
-F 2 "" H 1900 3500 50  0001 C CNN
-F 3 "" H 1900 3500 50  0001 C CNN
-	1    1900 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L pkd8279:pkd8279 U?
 U 1 1 6079965D
-P 3100 1400
-F 0 "U?" H 4125 1787 60  0000 C CNN
-F 1 "pkd8279" H 4125 1681 60  0000 C CNN
-F 2 "pkd8279" H 4100 1790 60  0001 C CNN
-F 3 "" H 3100 1400 60  0000 C CNN
-	1    3100 1400
+P 4050 1750
+F 0 "U?" H 5075 2137 60  0000 C CNN
+F 1 "pkd8279" H 5075 2031 60  0000 C CNN
+F 2 "pkd8279" H 5050 2140 60  0001 C CNN
+F 3 "" H 4050 1750 60  0000 C CNN
+	1    4050 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -258,12 +247,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 607D06F8
-P 6950 1750
-F 0 "SW?" H 6950 2035 50  0000 C CNN
-F 1 "SW_Push" H 6950 1944 50  0000 C CNN
-F 2 "" H 6950 1950 50  0001 C CNN
-F 3 "~" H 6950 1950 50  0001 C CNN
-	1    6950 1750
+P 6850 1900
+F 0 "SW?" H 6850 2185 50  0000 C CNN
+F 1 "SW_Push" H 6850 2094 50  0000 C CNN
+F 2 "" H 6850 2100 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+	1    6850 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -673,4 +662,275 @@ NoConn ~ 8150 950
 NoConn ~ 9000 950 
 NoConn ~ 9000 1550
 NoConn ~ 8150 1550
+Entry Wire Line
+	3650 2750 3750 2850
+Entry Wire Line
+	3650 2850 3750 2950
+Entry Wire Line
+	3650 2950 3750 3050
+Entry Wire Line
+	3650 3050 3750 3150
+Entry Wire Line
+	3650 3150 3750 3250
+Entry Wire Line
+	3650 3250 3750 3350
+Entry Wire Line
+	3650 3350 3750 3450
+Wire Wire Line
+	3750 2850 4050 2850
+Wire Wire Line
+	4050 2950 3750 2950
+Wire Wire Line
+	3750 3050 4050 3050
+Wire Wire Line
+	3750 3150 4050 3150
+Wire Wire Line
+	3750 3250 4050 3250
+Wire Wire Line
+	3750 3350 4050 3350
+Wire Wire Line
+	3750 3450 4050 3450
+Entry Wire Line
+	3650 3450 3750 3550
+Wire Wire Line
+	3750 3550 4050 3550
+Text GLabel 3650 2800 0    50   Input ~ 0
+D[0..7]
+Text GLabel 6450 1750 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	6450 1750 6100 1750
+Wire Wire Line
+	6100 2550 6250 2550
+Wire Wire Line
+	6100 2250 6250 2250
+Wire Wire Line
+	6100 2350 6250 2350
+Wire Wire Line
+	6100 2450 6250 2450
+Text GLabel 6250 2250 2    50   Input ~ 0
+Col3
+Text GLabel 6250 2350 2    50   Input ~ 0
+Col2
+Text GLabel 6250 2450 2    50   Input ~ 0
+Col1
+Text GLabel 6250 2550 2    50   Input ~ 0
+Col0
+NoConn ~ 4050 2450
+NoConn ~ 4050 2350
+NoConn ~ 4050 2250
+NoConn ~ 4050 2150
+Wire Wire Line
+	6100 1850 6250 1850
+Wire Wire Line
+	6100 1950 6250 1950
+Text GLabel 6250 1850 2    50   Input ~ 0
+Row1
+Text GLabel 6250 1950 2    50   Input ~ 0
+Row0
+Text GLabel 4050 1750 0    50   Input ~ 0
+Row2
+Text GLabel 4050 1850 0    50   Input ~ 0
+Row3
+Text GLabel 4050 1950 0    50   Input ~ 0
+PCLK
+Text GLabel 4050 2050 0    50   Input ~ 0
+IRC
+Text GLabel 4050 2550 0    50   Output ~ 0
+RESET
+Text GLabel 4050 2650 0    50   Output ~ 0
+RD
+Text GLabel 4050 2750 0    50   Output ~ 0
+WR
+Wire Wire Line
+	6650 2050 6100 2050
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A06110
+P 6850 2250
+F 0 "SW?" H 6850 2535 50  0000 C CNN
+F 1 "SW_Push" H 6850 2444 50  0000 C CNN
+F 2 "" H 6850 2450 50  0001 C CNN
+F 3 "~" H 6850 2450 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1900 6650 2050
+Wire Wire Line
+	6650 2250 6650 2150
+Wire Wire Line
+	6650 2150 6100 2150
+Wire Wire Line
+	7050 1900 7050 2100
+Wire Wire Line
+	7050 2100 7100 2100
+Connection ~ 7050 2100
+Wire Wire Line
+	7050 2100 7050 2250
+$Comp
+L power:GND #PWR?
+U 1 1 60A25843
+P 7100 2100
+F 0 "#PWR?" H 7100 1850 50  0001 C CNN
+F 1 "GND" V 7105 1972 50  0000 R CNN
+F 2 "" H 7100 2100 50  0001 C CNN
+F 3 "" H 7100 2100 50  0001 C CNN
+	1    7100 2100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6100 2650
+NoConn ~ 6100 2750
+NoConn ~ 6100 2850
+NoConn ~ 6100 2950
+NoConn ~ 6100 3050
+NoConn ~ 6100 3150
+NoConn ~ 6100 3250
+NoConn ~ 6100 3350
+NoConn ~ 6100 3450
+NoConn ~ 4050 3650
+Wire Wire Line
+	6700 4350 6700 3550
+Wire Wire Line
+	6700 3550 6100 3550
+Entry Wire Line
+	5400 4250 5500 4350
+Entry Wire Line
+	5400 4350 5500 4450
+Entry Wire Line
+	5400 4450 5500 4550
+Entry Wire Line
+	5400 4550 5500 4650
+Entry Wire Line
+	5400 4650 5500 4750
+Entry Wire Line
+	5400 4750 5500 4850
+Entry Wire Line
+	5400 4850 5500 4950
+Entry Wire Line
+	5400 4950 5500 5050
+Entry Wire Line
+	5400 5050 5500 5150
+Entry Wire Line
+	5400 5150 5500 5250
+$Comp
+L Logic_Programmable:PAL16L8 U?
+U 1 1 60797DE5
+P 6200 4850
+F 0 "U?" H 6200 5731 50  0000 C CNN
+F 1 "PAL16L8" H 6200 5640 50  0000 C CNN
+F 2 "" H 6200 4850 50  0001 C CNN
+F 3 "" H 6200 4850 50  0001 C CNN
+	1    6200 4850
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7000 4550 6900 4650
+Entry Wire Line
+	7000 4450 6900 4550
+Entry Wire Line
+	7000 4350 6900 4450
+Entry Wire Line
+	7000 4750 6900 4850
+Entry Wire Line
+	7000 4650 6900 4750
+Wire Wire Line
+	6700 4450 6900 4450
+Wire Wire Line
+	6900 4550 6700 4550
+Wire Wire Line
+	6900 4650 6700 4650
+Wire Wire Line
+	6900 4750 6700 4750
+Wire Wire Line
+	6900 4850 6700 4850
+NoConn ~ 6700 4950
+NoConn ~ 6700 5050
+Wire Wire Line
+	6200 5450 6700 5450
+Wire Wire Line
+	6700 5450 6700 5350
+$Comp
+L power:GND #PWR?
+U 1 1 60B67621
+P 6700 5350
+F 0 "#PWR?" H 6700 5100 50  0001 C CNN
+F 1 "GND" H 6705 5222 50  0000 R CNN
+F 2 "" H 6700 5350 50  0001 C CNN
+F 3 "" H 6700 5350 50  0001 C CNN
+	1    6700 5350
+	-1   0    0    1   
+$EndComp
+Wire Bus Line
+	5400 5500 7000 5500
+Wire Wire Line
+	5500 4350 5700 4350
+Wire Wire Line
+	5500 4450 5700 4450
+Wire Wire Line
+	5500 4550 5700 4550
+Wire Wire Line
+	5500 4650 5700 4650
+Wire Wire Line
+	5500 4750 5700 4750
+Wire Wire Line
+	5500 4850 5700 4850
+Wire Wire Line
+	5500 4950 5700 4950
+Wire Wire Line
+	5500 5050 5700 5050
+Wire Wire Line
+	5500 5150 5700 5150
+Wire Wire Line
+	5500 5250 5700 5250
+Text Label 5600 4350 0    50   ~ 0
+A0
+Text Label 5600 4450 0    50   ~ 0
+A2
+Text Label 5600 4550 0    50   ~ 0
+A3
+Text Label 5600 4650 0    50   ~ 0
+A4
+Text Label 5600 4750 0    50   ~ 0
+A5
+Text Label 5600 4850 0    50   ~ 0
+A6
+Text Label 5600 4950 0    50   ~ 0
+A7
+Text Label 5600 5050 0    50   ~ 0
+A8
+Text Label 5600 5150 0    50   ~ 0
+A9
+Text Label 5600 5250 0    50   ~ 0
+A10
+Text Label 6750 4450 0    50   ~ 0
+A11
+Text Label 6750 4550 0    50   ~ 0
+A12
+Text Label 6750 4650 0    50   ~ 0
+A13
+Text Label 6750 4750 0    50   ~ 0
+A14
+Text Label 6750 4850 0    50   ~ 0
+A15
+Entry Wire Line
+	5400 4150 5500 4050
+Wire Wire Line
+	5500 4050 5950 4050
+Wire Wire Line
+	5950 4050 5950 3750
+Wire Wire Line
+	5950 3750 6100 3750
+Wire Wire Line
+	6100 3750 6100 3650
+Wire Bus Line
+	7000 4350 7000 5500
+Wire Bus Line
+	3650 2750 3650 3450
+Wire Bus Line
+	5400 4150 5400 5500
+Text Label 5600 4050 0    50   ~ 0
+A1
+Text GLabel 5400 4300 0    50   Input ~ 0
+A[0..15]
 $EndSCHEMATC
